@@ -11,10 +11,21 @@
     <script type="text/javascript" src="./script.js">
 </script>
 	<form method="post">
-		<textarea minlength="3" maxlength="50" id="name"></textarea>
-		<input type="url" required="required" id="portfolio">
-		<input type="color" id="favColor">
-		<input type="range" min="1" max="100" id="likeness">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+		<br>
+		
+		<label for="portfolio">Portfolio:</label>
+		<input type="url" name="portfolio" id="portfolio" required>
+		<br>
+
+		<label for="favaColor">Favorite Color:</label>
+		<input type="color" id="favColor" name="favColor">
+		<br>
+
+		<label for="likeness">Likeness:</label>
+		<input type="range" min="1" max="100" name="likeness" id="likeness">
+		<br>
 	</form>
 
 </body>
